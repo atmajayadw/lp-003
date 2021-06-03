@@ -15,11 +15,14 @@
         &.fixed {
             position: fixed;
             top: 0;
-            left: 5%;
-            right: 5%;
+            // left: 5%;
+            // right: 5%;
+            left: 0;
+            right: 0;
             transition: 1s;
             border-bottom: whitesmoke 2px solid;
             box-sizing: border-box;
+            background-color: whitesmoke;
 
             @media (min-width: 575.98px) {
                 padding: 20px 40px;
@@ -57,7 +60,7 @@
         }
 
         .links {
-            width: 50%;
+            width: 60%;
             margin-top: 12px;
             display: none;
 

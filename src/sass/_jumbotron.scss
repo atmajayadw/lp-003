@@ -1,0 +1,87 @@
+@use 'setup';
+
+#jumbotron {
+    margin-top: -80px;
+    height: 100vh;
+    background-color: setup.$secondaryColor;
+    background-image: url("../assets/img/background.png");
+    background-size: cover;
+
+    .jumbo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: auto;
+        height: 90vh;
+
+
+        .caption {
+            text-align: center;
+            font-family: setup.$font-content;
+            color: white;
+            text-shadow: 0px 5px 30px #503020;
+
+            h1 {
+                margin-top: -5px;
+            }
+        }
+
+        .search {
+            margin-top: 20px;
+            background-color: white;
+            display: flex;
+            border-radius: 0px 5px 5px 0px;
+
+            .search-form {
+                width: 300px;
+                display: flex;
+                justify-content: space-between;
+
+                label {
+                    font-size: 11px;
+                    margin-left: 3px;
+                    color: #D4C9B6;
+                }
+
+                select {
+                    border: 0;
+                    margin-top: -10px;
+                    font-family: setup.$font-content;
+                    font-size: 14px;
+                }
+            }
+
+            .btn-search {
+                background-color: setup.$primaryColor;
+                padding: 10px;
+                color: white;
+                width: 120px;
+                height: 48px;
+                display: flex;
+                margin-left: 20px;
+                border-radius: 0px 5px 5px 0px;
+
+                span {
+                    margin: auto;
+                    font-size: 0.8em;
+                }
+
+            }
+
+            @media (max-width: 575.98px) {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-radius: 0px;
+
+                .btn-search {
+                    width: 320px;
+                    margin-left: 0px;
+                    border-radius: 0px;
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+}
