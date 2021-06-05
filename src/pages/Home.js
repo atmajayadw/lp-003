@@ -4,6 +4,7 @@ import '../css/main.css'
 // import $ from 'jquery';
 import Navbar from '../component/Navbar.js'
 import Jumbotron from '../component/Jumbotron.js'
+import Welcome from '../component/Welcome.js'
 
 
 
@@ -13,6 +14,7 @@ export default class Home extends Component {
             <>
                 <Navbar />
                 <Jumbotron />
+                <Welcome />
             </>
         )
     }

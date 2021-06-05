@@ -26,6 +26,7 @@ body {
   border-bottom: whitesmoke 2px solid;
   box-sizing: border-box;
   background-color: whitesmoke;
+  z-index: 10;
 }
 @media (min-width: 575.98px) {
   #navbar .navbar.fixed {
@@ -273,6 +274,110 @@ body {
     margin-left: 0px;
     border-radius: 0px;
     margin-top: 15px;
+  }
+}
+
+#welcome {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  position: relative;
+}
+#welcome::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background-color: #F0E3D0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  clip-path: polygon(100% 0, 100% 75%, 40% 75%, 0 35%, 0 0);
+  z-index: -1;
+}
+#welcome .welcome-left {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  #welcome .welcome-left {
+    justify-content: center;
+    order: 2;
+    margin-top: 50px;
+  }
+}
+#welcome .welcome-left .boxes-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#welcome .welcome-left .boxes-two {
+  display: flex;
+  flex-direction: column;
+}
+#welcome .welcome-left .box {
+  width: 260px;
+  padding: 20px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+#welcome .welcome-left .box img {
+  width: 100%;
+}
+#welcome .welcome-left .box .caption {
+  margin-left: 50px;
+  margin-top: 10px;
+  position: relative;
+}
+#welcome .welcome-left .box .caption h5 {
+  font-weight: 700;
+  font-size: 20px;
+}
+#welcome .welcome-left .box .caption h5::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 10px;
+  height: 3px;
+  width: 40px;
+  background-color: #FE8369;
+}
+#welcome .welcome-left .box .caption p {
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  margin-top: -7px;
+}
+#welcome .welcome-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -150px;
+}
+#welcome .welcome-right hr {
+  height: 5px;
+  color: #FE8369;
+  opacity: 1;
+}
+#welcome .welcome-right h2 {
+  font-family: "Montserrat", serif;
+}
+#welcome .welcome-right p {
+  line-height: 2em;
+}
+#welcome .welcome-right .btn-detail {
+  background-color: #FE8369;
+  color: white;
+  width: 130px;
+}
+@media (max-width: 768px) {
+  #welcome .welcome-right {
+    margin-top: 0;
+    order: 1;
   }
 }
 

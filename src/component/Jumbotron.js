@@ -1,6 +1,4 @@
 import React, { Component } from 'react'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../css/main.css'
 
 export default class Jumbotron extends Component {
     render() {
