@@ -5,6 +5,7 @@ import '../css/main.css'
 import Navbar from '../component/Navbar.js'
 import Jumbotron from '../component/Jumbotron.js'
 import Welcome from '../component/Welcome.js'
+import Featured from '../component/Featured.js'
 
 
 
@@ -15,6 +16,7 @@ export default class Home extends Component {
                 <Navbar />
                 <Jumbotron />
                 <Welcome />
+                <Featured />
             </>
         )
     }
