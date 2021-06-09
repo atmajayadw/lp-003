@@ -381,6 +381,9 @@ body {
   }
 }
 
+#featured .featured {
+  margin-bottom: 80px;
+}
 #featured .featured .title h3 {
   font-family: "Montserrat", serif;
   font-weight: 700;
@@ -431,6 +434,106 @@ body {
 #featured .featured .boxes .box .features .btn-price {
   background-color: #FE8369;
   color: white;
+}
+
+#benefits {
+  background-color: #F0E3D0;
+  background-image: url("../assets/img/pattern.png");
+  padding: 100px 0;
+}
+#benefits .benefits .title h3 {
+  font-family: "Montserrat", serif;
+  text-align: center;
+  font-weight: 700;
+}
+#benefits .benefits .benefits-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#benefits .benefits .benefits-left .title h5 {
+  margin-top: 40px;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+#benefits .benefits .benefits-left .caption p {
+  color: #4B4B4B;
+  font-size: 1em;
+}
+#benefits .benefits .benefits-right {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#benefits .benefits .benefits-right .boxes-one .box {
+  width: 240px;
+  height: 240px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+#benefits .benefits .benefits-right .boxes-one .box:first-child {
+  background-color: #FE8369;
+}
+#benefits .benefits .benefits-right .boxes-one .box:first-child h5 {
+  margin-top: 10px;
+  color: white;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+#benefits .benefits .benefits-right .boxes-one .box:first-child p {
+  color: white;
+  font-family: "Montserrat", serif;
+  font-size: 12px;
+}
+#benefits .benefits .benefits-right .boxes-one .box img {
+  width: 60px;
+  height: 60px;
+}
+#benefits .benefits .benefits-right .boxes-one .box h5 {
+  margin-top: 10px;
+  color: #FE8369;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+#benefits .benefits .benefits-right .boxes-one .box p {
+  color: #FE8369;
+  font-family: "Montserrat", serif;
+  font-size: 12px;
+}
+#benefits .benefits .benefits-right .boxes-two {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#benefits .benefits .benefits-right .boxes-two .box {
+  width: 240px;
+  height: 240px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+#benefits .benefits .benefits-right .boxes-two .box img {
+  width: 60px;
+  height: 60px;
+}
+#benefits .benefits .benefits-right .boxes-two .box h5 {
+  margin-top: 10px;
+  color: #FE8369;
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+#benefits .benefits .benefits-right .boxes-two .box p {
+  color: #FE8369;
+  font-family: "Montserrat", serif;
+  font-size: 12px;
 }
 
 body {

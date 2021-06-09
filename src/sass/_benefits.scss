@@ -1,0 +1,129 @@
+@use 'setup';
+
+#benefits {
+    background-color: setup.$secondaryColor;
+    background-image: url("../assets/img/pattern.png");
+    padding: 100px 0;
+
+    .benefits {
+
+        .title {
+            h3 {
+                font-family: setup.$font-content;
+                text-align: center;
+                font-weight: 700;
+            }
+        }
+
+        .benefits-left {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .title {
+                h5 {
+                    margin-top: 40px;
+                    font-family: setup.$font-content;
+                    font-weight: 700;
+                }
+            }
+
+            .caption {
+                p {
+                    color: setup.$textColor;
+                    font-size: 1em;
+                }
+            }
+        }
+
+        .benefits-right {
+            margin-top: 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .boxes-one {
+                .box {
+                    width: 240px;
+                    height: 240px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 20px;
+                    margin-top: 20px;
+
+                    &:first-child {
+                        background-color: setup.$primaryColor;
+
+                        h5 {
+                            margin-top: 10px;
+                            color: white;
+                            font-family: setup.$font-content;
+                            font-weight: 700;
+                        }
+
+                        p {
+                            color: white;
+                            font-family: setup.$font-content;
+                            font-size: 12px;
+                        }
+                    }
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    h5 {
+                        margin-top: 10px;
+                        color: setup.$primaryColor;
+                        font-family: setup.$font-content;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: setup.$primaryColor;
+                        font-family: setup.$font-content;
+                        font-size: 12px;
+                    }
+                }
+            }
+
+            .boxes-two {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .box {
+                    width: 240px;
+                    height: 240px;
+                    background-color: white;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 20px;
+                    margin-top: 20px;
+
+                    img {
+                        width: 60px;
+                        height: 60px;
+                    }
+
+                    h5 {
+                        margin-top: 10px;
+                        color: setup.$primaryColor;
+                        font-family: setup.$font-content;
+                        font-weight: 700;
+                    }
+
+                    p {
+                        color: setup.$primaryColor;
+                        font-family: setup.$font-content;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
