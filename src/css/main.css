@@ -381,8 +381,60 @@ body {
   }
 }
 
+#featured .featured .title h3 {
+  font-family: "Montserrat", serif;
+  font-weight: 700;
+}
+#featured .featured hr {
+  height: 5px;
+  color: #FE8369;
+  opacity: 1;
+}
+#featured .featured .caption {
+  max-width: 800px;
+}
+#featured .featured .filter {
+  width: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+}
+#featured .featured .filter p {
+  cursor: pointer;
+  text-decoration: none;
+  color: #4B4B4B;
+}
+#featured .featured .boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#featured .featured .boxes .box {
+  margin-top: 30px;
+  width: 320px;
+  height: 360px;
+  background-color: white;
+  box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+}
+#featured .featured .boxes .box .title {
+  margin-top: 10px;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 700;
+}
+#featured .featured .boxes .box .features {
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#featured .featured .boxes .box .features .btn-price {
+  background-color: #FE8369;
+  color: white;
+}
+
 body {
-  height: 2000px;
+  height: 4000px;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,3 +1,5 @@
 import Logo from './logo.png'
+import Bed from './bed.png'
+import Bath from './bath.png'
 
-export { Logo }
+export { Logo, Bed, Bath }

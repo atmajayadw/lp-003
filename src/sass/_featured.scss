@@ -1,1 +1,67 @@
 @use 'setup';
+
+#featured {
+    .featured {
+        .title h3 {
+            font-family: setup.$font-content;
+            font-weight: 700;
+        }
+
+        hr {
+            height: 5px;
+            color: setup.$primaryColor;
+            opacity: 1;
+        }
+
+        .caption {
+            max-width: 800px;
+        }
+
+        .filter {
+            width: 140px;
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+
+            p {
+                cursor: pointer;
+                text-decoration: none;
+                color: setup.$textColor;
+            }
+        }
+
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+
+            .box {
+                margin-top: 30px;
+                width: 320px;
+                height: 360px;
+                background-color: white;
+                box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+
+                .title {
+                    margin-top: 10px;
+                    padding: 0px 20px;
+                    font-size: 18px;
+                    font-weight: 700;
+                }
+
+                .features {
+                    padding: 0px 20px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    .btn-price {
+                        background-color: setup.$primaryColor;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+
+}

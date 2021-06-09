@@ -13,7 +13,7 @@ export default class Welcome extends Component {
 
                                 <div className="boxes-one">
                                     <div className="box">
-                                        <img src={Agent} class="img-fluid" alt="" />
+                                        <img src={Agent} className="img-fluid" alt="" />
                                         <div className="caption">
                                             <h5 className="title">Agents</h5>
                                             <p>Lorem ipsum dolor sit Stet  kas no sea taki mata.</p>
@@ -23,7 +23,7 @@ export default class Welcome extends Component {
 
                                 <div className="boxes-two">
                                     <div className="box">
-                                        <img src={Buyers} class="img-fluid" alt="" />
+                                        <img src={Buyers} className="img-fluid" alt="" />
                                         <div className="caption">
                                             <h5 className="title">Buyers</h5>
                                             <p>Lorem ipsum dolor sit Stet  kas no sea taki mata.</p>
@@ -31,7 +31,7 @@ export default class Welcome extends Component {
                                     </div>
 
                                     <div className="box">
-                                        <img src={Seller} class="img-fluid" alt="" />
+                                        <img src={Seller} className="img-fluid" alt="" />
                                         <div className="caption">
                                             <h5 className="title">Sellers</h5>
                                             <p>Lorem ipsum dolor sit Stet  kas no sea taki mata.</p>
