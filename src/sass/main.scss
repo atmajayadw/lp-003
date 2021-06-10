@@ -3,7 +3,4 @@
 @use 'welcome';
 @use 'featured';
 @use 'benefits';
-
-body {
-    height: 4000px;
-}
+@use 'testimonials';

@@ -1,0 +1,48 @@
+@use 'setup';
+
+#testimonials {
+    padding: 100px 0;
+
+    .title {
+        text-align: center;
+        font-family: setup.$font-content;
+        margin-bottom: 50px;
+    }
+
+    .testi {
+
+        img {
+            width: 100px;
+            display: block;
+            margin: 30px auto;
+            border: 1px solid setup.$primaryColor;
+            padding: 5px;
+            border-radius: 50%;
+        }
+
+        p {
+            font-family: setup.$font-content;
+            color: setup.$textColor;
+            font-size: 14px;
+            text-align: center;
+            margin-top: -10px;
+            line-height: 2em;
+            word-spacing: 3px;
+        }
+
+        h5 {
+            text-align: center;
+        }
+
+
+    }
+
+    .btn-view {
+        background-color: setup.$primaryColor;
+        padding: 15px;
+        color: white;
+        width: 160px;
+        display: block;
+        margin: 0px auto;
+    }
+}
