@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap");
 body {
   font-family: "Amiri", serif;
@@ -571,6 +571,45 @@ body {
   width: 160px;
   display: block;
   margin: 0px auto;
+}
+
+#offers {
+  padding: 100px 0;
+  background-color: #4B4B4B;
+}
+#offers .offers .title {
+  margin-bottom: 30px;
+}
+#offers .offers .title h3 {
+  text-align: center;
+  font-family: "Montserrat", serif;
+  font-weight: 600;
+  color: white;
+}
+#offers .offers .caption {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "Amiri", serif;
+  color: white;
+}
+#offers .offers .buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 60px;
+}
+#offers .offers .buttons .btn {
+  background-color: #FE8369;
+  padding: 15px;
+  color: white;
+  width: 160px;
+  margin: 0px auto;
+}
+#offers .offers .buttons hr {
+  height: 3px;
+  width: 60px;
+  color: #FE8369;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=main.css.map */

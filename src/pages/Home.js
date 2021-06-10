@@ -7,7 +7,7 @@ import Welcome from '../component/Welcome.js'
 import Featured from '../component/Featured.js'
 import Benefits from '../component/Benefits.js'
 import Testimonials from '../component/Testimonials';
-
+import Offers from '../component/Offers';
 
 
 export default class Home extends Component {
@@ -20,6 +20,7 @@ export default class Home extends Component {
                 <Featured />
                 <Benefits />
                 <Testimonials />
+                <Offers />
             </>
         )
     }
