@@ -5,5 +5,6 @@ import Time from './time.png'
 import Target from './target.png'
 import Support from './support.png'
 import Profile from './profile.png'
+import Social from './socialmedia.png'
 
-export { Logo, Bed, Bath, Time, Target, Support, Profile }
+export { Logo, Bed, Bath, Time, Target, Support, Profile, Social }

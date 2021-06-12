@@ -8,6 +8,7 @@ import Featured from '../component/Featured.js'
 import Benefits from '../component/Benefits.js'
 import Testimonials from '../component/Testimonials';
 import Offers from '../component/Offers';
+import Footer from '../component/Footer';
 
 
 export default class Home extends Component {
@@ -21,6 +22,7 @@ export default class Home extends Component {
                 <Benefits />
                 <Testimonials />
                 <Offers />
+                <Footer />
             </>
         )
     }
