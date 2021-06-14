@@ -4,10 +4,21 @@
     background-color: setup.$secondaryColor;
     background-image: url("../assets/img/pattern.png");
     padding: 100px 0;
+    overflow: hidden;
 
     .benefits {
 
-        .title {
+        .title-head {
+
+            transition: 0.5s;
+            transform: translate(0, 50px);
+            opacity: 0;
+
+            &.show {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+
             h3 {
                 font-family: setup.$font-content;
                 text-align: center;
@@ -19,6 +30,14 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            transition: 0.5s;
+            transform: translate(-100px, 0);
+            opacity: 0;
+
+            &.show {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
 
             .title {
                 h5 {
@@ -52,6 +71,14 @@
                     justify-content: center;
                     padding: 20px;
                     margin-top: 20px;
+                    transition: 0.5s;
+                    transform: translate(100px, 0);
+                    opacity: 0;
+
+                    &.show {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
 
                     &:first-child {
                         background-color: setup.$primaryColor;
@@ -104,6 +131,14 @@
                     justify-content: center;
                     padding: 20px;
                     margin-top: 20px;
+                    transition: 0.5s;
+                    transform: translate(100px, 0);
+                    opacity: 0;
+
+                    &.show {
+                        opacity: 1;
+                        transform: translate(0, 0);
+                    }
 
                     img {
                         width: 60px;

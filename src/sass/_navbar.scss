@@ -2,31 +2,33 @@
 
 #navbar {
     width: 100vw;
-    height: 80px;
+    height: 110px;
     z-index: 5;
+    transition: 0.7s;
+    border-bottom: 0px;
+    background-color: transparent;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: -30px;
+
+    &.fixed {
+        border-bottom: whitesmoke 2px solid;
+        box-sizing: border-box;
+        background-color: white;
+        z-index: 10;
+        height: 110px;
+    }
 
     .navbar {
         display: flex;
         flex-direction: row;
         align-items: center;
-        position: relative;
-        padding: 15px;
+        padding: 30px 20px 20px 10px;
+        margin: 10px auto;
 
-        &.fixed {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            transition: 1s;
-            border-bottom: whitesmoke 2px solid;
-            box-sizing: border-box;
-            background-color: whitesmoke;
-            z-index: 10;
-
-            @media (min-width: 575.98px) {
-                padding: 20px 40px;
-            }
-
+        @media (min-width: 575.98px) {
+            padding: 20px 40px;
         }
 
         .logo {
@@ -232,5 +234,6 @@
             color: setup.$primaryColor;
         }
     }
+
 
 }

@@ -29,10 +29,10 @@ export default class Navbar extends Component {
     }
 
     stickyNavbar = () => {
-        const fixbar = $('.navbar');
+        const fixbar = $('#navbar');
 
         if (fixbar.length) {
-            if ($(document).scrollTop() > 135) {
+            if ($(document).scrollTop() > 20) {
                 fixbar.addClass("fixed");
             } else {
                 fixbar.removeClass("fixed");
@@ -44,7 +44,7 @@ export default class Navbar extends Component {
         return (
             <>
                 <section id="navbar">
-                    <div className="container">
+                    <div className="container position-relative">
                         <div className="row navbar">
                             <div className="logo">
                                 <img src={Logo} alt=""></img>

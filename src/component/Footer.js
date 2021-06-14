@@ -58,7 +58,8 @@ export default class Footer extends Component {
 
                     </div>
                     <hr />
-                    <p>Copyright © 2019 Property Agent. All rights reserved.</p>
+                    <p>Copyright © 2019 Property Agent. All rights reserved. <br />
+                        Designed by <a href="https://www.inkyy.com/property-booking-free-adobe-xd-template/">Inkyy</a></p>
                 </section>
             </>
         )

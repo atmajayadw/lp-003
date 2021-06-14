@@ -44,14 +44,20 @@
 
         .box {
             width: 260px;
-            // height: 380px;
             padding: 20px;
-            // box-sizing: border-box;
             background-color: white;
             display: flex;
             flex-direction: column;
             align-items: center;
             margin-bottom: 30px;
+            transition: 0.5s;
+            transform: translate(0, 100px);
+            opacity: 0;
+
+            &.show {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
 
             img {
                 width: 100%;

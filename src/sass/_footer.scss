@@ -3,6 +3,11 @@
 #footer {
     background-color: setup.$tertiaryColor;
 
+    a {
+        text-decoration: none;
+        color: setup.$primaryColor;
+    }
+
     hr {
         height: 2px;
         color: setup.$primaryColor;

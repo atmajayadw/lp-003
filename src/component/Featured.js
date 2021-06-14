@@ -7,6 +7,7 @@ export default class Featured extends Component {
 
     componentDidMount() {
         this.filterElement();
+        window.addEventListener("scroll", this.showFeatured);
     }
 
     filterElement = () => {
@@ -22,6 +23,19 @@ export default class Featured extends Component {
                 $element.hide().filter('.' + filterVal).show();
             }
         });
+    }
+
+    showFeatured = () => {
+        const wScroll = $(window).scrollTop();
+        if ($('#featured').length) {
+            if (wScroll > $('#featured').offset().top - 150) {
+                $('.featured .box').each(function (i) {
+                    setTimeout(function () {
+                        $('.featured .box').eq(i).addClass('show');
+                    }, 400 * (i + 1));
+                });
+            }
+        }
     }
 
     render() {

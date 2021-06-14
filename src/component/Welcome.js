@@ -1,7 +1,25 @@
 import React, { Component } from 'react'
 import { Buyers, Seller, Agent } from '../assets/img/images.js'
-
+import $ from 'jquery';
 export default class Welcome extends Component {
+
+    componentDidMount() {
+        window.addEventListener("scroll", this.showWelcome);
+    }
+
+    showWelcome = () => {
+        const wScroll = $(window).scrollTop();
+        if ($('#welcome').length) {
+            if (wScroll > $('#welcome').offset().top - 100) {
+                $('.welcome .box').each(function (i) {
+                    setTimeout(function () {
+                        $('.welcome .box').eq(i).addClass('show');
+                    }, 400 * (i + 1));
+                });
+            }
+        }
+    }
+
     render() {
         return (
             <>
